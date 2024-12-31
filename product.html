@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Shop - Products</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <style>
+        /* Ensure body and html take full height */
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+        }
+
+        .main-content {
+            flex: 1; /* Allow the content to take the available space */
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: contain;
+            width: 100%;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 450px;
+        }
+
+        .card-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .add-to-cart {
+            margin-top: auto;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .list-inline-item {
+            display: inline;
+            margin: 0 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Dress Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 main-content">
+        <h2 class="text-center">Our Products</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/images/dress1.jpg" class="card-img-top" alt="Dress">
+                    <div class="card-body">
+                        <h5 class="card-title">Shirt</h5>
+                        <p class="card-text">₹49.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/images/dress2.jpg" class="card-img-top" alt="Dress">
+                    <div class="card-body">
+                        <h5 class="card-title">Men's Hoodie</h5>
+                        <p class="card-text">₹59.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./assets/images/dress3.jpg" class="card-img-top" alt="Dress">
+                    <div class="card-body">
+                        <h5 class="card-title">Hoodie</h5>
+                        <p class="card-text">₹39.99</p>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more products as needed -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 Dress Shop. All rights reserved.</p>
+            <p>
+                <a href="https://facebook.com" target="_blank" class="text-white me-2"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="https://twitter.com" target="_blank" class="text-white me-2"><i class="bi bi-twitter"></i> Twitter</a>
+                <a href="https://instagram.com" target="_blank" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
+            </p>
+            <!-- <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+                <li class="list-inline-item"><a href="product.html" class="text-white">Products</a></li>
+                <li class="list-inline-item"><a href="cart.html" class="text-white">Cart</a></li>
+                <li class="list-inline-item"><a href="contact.html" class="text-white">Contact</a></li>
+            </ul> -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
